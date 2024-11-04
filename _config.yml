@@ -1,0 +1,46 @@
+# Basic Site Settings
+title: Sania's Portfolio
+description: Data Analytics Portfolio showcasing academic and professional projects
+baseurl: "/portfolio"
+url: "https://sania3fat.github.io"
+
+# Author Information
+author:
+  name: Sania Fatima
+  title: Business Analytics Graduate | Data Analyst
+  email: sfatima3@kent.edu
+  github: sania3fat
+  linkedin: "https://www.linkedin.com/in/sania-fatima-a1a732277/"
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+
+# Collections
+collections:
+  projects:
+    output: true
+    permalink: /projects/:path/
+
+# Default Settings for Collections
+defaults:
+  - scope:
+      path: "_projects/featured"
+    values:
+      type: "featured"
+  - scope:
+      path: "_projects/class"
+    values:
+      type: "class"
+
+
+# Project Categories
+project_categories:
+  - data-analysis
+  - machine-learning
+  - visualization
+  - database
+  - statistics
