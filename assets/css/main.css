@@ -1,0 +1,223 @@
+---
+---
+
+// Variables
+$primary-color: #2a2a2a;
+$secondary-color: #4a90e2;
+$background-color: #ffffff;
+$text-color: #333333;
+$border-radius: 8px;
+$transition-speed: 0.3s;
+
+// Reset & Base Styles
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    line-height: 1.6;
+    color: $text-color;
+    background-color: $background-color;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+// Header Styles
+.site-header {
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 1rem 0;
+    
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .site-title {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: $primary-color;
+        text-decoration: none;
+    }
+    
+    .nav-links {
+        a {
+            margin-left: 2rem;
+            color: $text-color;
+            text-decoration: none;
+            
+            &:hover {
+                color: $secondary-color;
+            }
+        }
+    }
+}
+
+// Project Grid
+.projects-section {
+    padding: 4rem 0;
+    
+    h2 {
+        text-align: center;
+        margin-bottom: 2rem;
+        font-size: 2rem;
+        color: $primary-color;
+    }
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.project-card {
+    background: white;
+    border-radius: $border-radius;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: transform $transition-speed;
+    
+    &:hover {
+        transform: translateY(-5px);
+    }
+    
+    .project-image {
+        width: 100%;
+        height: 200px;
+        overflow: hidden;
+        
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    
+    .project-info {
+        padding: 1.5rem;
+        
+        h3 {
+            margin-bottom: 0.5rem;
+            color: $primary-color;
+        }
+        
+        p {
+            color: lighten($text-color, 20%);
+            margin-bottom: 1rem;
+        }
+    }
+}
+
+// Buttons
+.button {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border-radius: $border-radius;
+    text-decoration: none;
+    transition: background-color $transition-speed;
+    
+    &:not(.github-button) {
+        background-color: $secondary-color;
+        color: white;
+        
+        &:hover {
+            background-color: darken($secondary-color, 10%);
+        }
+    }
+}
+
+.github-button {
+    background-color: #333;
+    color: white;
+    margin-left: 0.5rem;
+    
+    &:hover {
+        background-color: #000;
+    }
+}
+
+// Footer Styles
+.site-footer {
+    background-color: $primary-color;
+    color: white;
+    padding: 2rem 0;
+    margin-top: 4rem;
+    
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    a {
+        color: white;
+        text-decoration: none;
+        
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+// Project Page Styles
+.project {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem 0;
+    
+    .project-header {
+        margin-bottom: 2rem;
+        text-align: center;
+        
+        h1 {
+            font-size: 2.5rem;
+            color: $primary-color;
+            margin-bottom: 1rem;
+        }
+    }
+    
+    .project-meta {
+        margin-bottom: 2rem;
+        text-align: center;
+        
+        .project-category {
+            color: $secondary-color;
+            font-weight: bold;
+        }
+        
+        .technologies {
+            margin-top: 1rem;
+            
+            .tech-tag {
+                display: inline-block;
+                padding: 0.25rem 0.75rem;
+                background-color: #f0f0f0;
+                border-radius: 20px;
+                margin: 0.25rem;
+                font-size: 0.9rem;
+            }
+        }
+    }
+}
+
+// Responsive Design
+@media (max-width: 768px) {
+    .site-header {
+        .nav-links {
+            display: none;
+        }
+    }
+    
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+}
