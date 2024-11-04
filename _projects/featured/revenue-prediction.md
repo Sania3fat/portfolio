@@ -45,6 +45,7 @@ Several time-series models were constructed. A few being:
 ## Results
 
 The results, by demographics on enrollment for Fall 2024 is given below for three of the models:
+
 ![image](https://github.com/user-attachments/assets/aaa5d317-be13-445d-bcce-992a8aac5a47)
 
 The prediction results underestimated final enrollment by about 3%, especially for students designated as "W" or "International." 
