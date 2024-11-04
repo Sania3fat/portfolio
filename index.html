@@ -1,0 +1,56 @@
+---
+layout: default
+title: Home
+---
+
+<section id="featured-projects" class="projects-section">
+    <h2>Featured Projects</h2>
+    <div class="projects-grid">
+        {% assign featured_projects = site.projects | where: "category", "featured" %}
+        {% for project in featured_projects %}
+        <div class="project-card">
+            {% if project.image %}
+            <div class="project-image">
+                <img src="{{ project.image | relative_url }}" alt="{{ project.title }}">
+            </div>
+            {% endif %}
+            <div class="project-info">
+                <h3>{{ project.title }}</h3>
+                <p>{{ project.description }}</p>
+                <div class="project-links">
+                    <a href="{{ project.url | relative_url }}" class="button">Learn More</a>
+                    {% if project.github_link %}
+                    <a href="{{ project.github_link }}" class="button github-button" target="_blank">GitHub</a>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</section>
+
+<section id="class-projects" class="projects-section">
+    <h2>Class Projects</h2>
+    <div class="projects-grid">
+        {% assign class_projects = site.projects | where: "category", "class" %}
+        {% for project in class_projects %}
+        <div class="project-card">
+            {% if project.image %}
+            <div class="project-image">
+                <img src="{{ project.image | relative_url }}" alt="{{ project.title }}">
+            </div>
+            {% endif %}
+            <div class="project-info">
+                <h3>{{ project.title }}</h3>
+                <p>{{ project.description }}</p>
+                <div class="project-links">
+                    <a href="{{ project.url | relative_url }}" class="button">Learn More</a>
+                    {% if project.github_link %}
+                    <a href="{{ project.github_link }}" class="button github-button" target="_blank">GitHub</a>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</section>
