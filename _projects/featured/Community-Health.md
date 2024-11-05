@@ -28,6 +28,7 @@ Data is currently being gathered from multiple sources through API calls, direct
 ## Results
 
 A sample dashboard is shown below, along with a sample code book detailing the construction of the metrics.
+
 ![Sample Health Index](https://github.com/user-attachments/assets/c583c8de-20ca-45ef-b52f-e99206298f26)
 
 ![Sample Metric](https://github.com/user-attachments/assets/ad5fd718-bd5f-4ea8-8b41-0fe3ef13d40e)
