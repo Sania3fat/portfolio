@@ -6,15 +6,18 @@ layout: default
         <h1>{{ page.title }}</h1>
         {% if page.github_link %}
             <a href="{{ page.github_link }}" class="button github-button" target="_blank">
-                View on GitHub
+                <i class="fab fa-github"></i> View on GitHub
             </a>
         {% endif %}
     </div>
 
     <div class="project-meta">
-        <p class="project-category">{{ page.category | capitalize }} Project</p>
+        <p class="project-category">
+            <i class="fas fa-folder"></i> {{ page.category | capitalize }} Project
+        </p>
         {% if page.technologies %}
             <div class="technologies">
+                <i class="fas fa-code"></i>
                 {% for tech in page.technologies %}
                     <span class="tech-tag">{{ tech }}</span>
                 {% endfor %}
