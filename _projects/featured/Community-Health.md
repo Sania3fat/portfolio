@@ -1,4 +1,3 @@
-
 ---
 title: "Community Health Dashboard"
 description: "Developed and implemented predictive models to forecast university revenue and enrollment trends using historical financial
