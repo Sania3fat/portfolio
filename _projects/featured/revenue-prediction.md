@@ -9,7 +9,7 @@ technologies:
   - R
   - PowerBI
   - JMP
-image: /assets/images/sample-project.jpg
+image: /assets/images/salary.png
 ---
 
 # Project Overview
