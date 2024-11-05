@@ -1,5 +1,5 @@
 ---
-title: "Community Health Dashboard"
+title: "Community Health"
 description: "Developed and implemented predictive models to forecast university revenue and enrollment trends using historical financial
 data and demographic analysis. Identified significant implications for university budgeting, tuition adjustments, and student
 recruitment strategies."
