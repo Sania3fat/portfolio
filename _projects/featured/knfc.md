@@ -34,6 +34,8 @@ The primary data was from a point-of-sale system. We collected data for one-year
 Our analysis and results were presented to management in the form of a dashboard that we created in Tableau. The following screenshots show part of our dashboard. Our presentation was **Commended by the KNFC board, and received excellent feedback for timely completion, clear presentation, engaging
 storytelling, and effective analysis.**
 
+<img src="https://github.com/user-attachments/assets/322789b3-ae8b-4273-96ef-d55f59fc97a3" alt="Comparitive analysis of Cost versus Selling Price across Departments" style="width:75%; height:auto;">
+
 ![Comparitive analysis of Cost versus Selling Price across Departments](https://github.com/user-attachments/assets/322789b3-ae8b-4273-96ef-d55f59fc97a3)
 
 
