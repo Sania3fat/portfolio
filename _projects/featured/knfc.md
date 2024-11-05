@@ -3,7 +3,7 @@ title: "KNFC: Sales and Pricing Model"
 description: "Using POS data, created dashboards using Tableau for Kent Natural Food Cooperative (KNFC) that provided insights on top sellers and
 slow-moving items, leading to inventory cost savings, improved sales predictions, and strategic enhancements. Inventory turn-overs were optimized, reducing holding and shortage costs, and achieved a profit of $16,279.88 in Packaged Goods through improved predictive algorithms for sales demand and inventory management."
 category: featured
-github_link: [KNFC](https://github.com/Sania3fat/portfolio/tree/main/Dashboard)
+github_link: https://github.com/Sania3fat/portfolio/tree/main/Dashboard
 technologies:
   - R
   - Tableau
