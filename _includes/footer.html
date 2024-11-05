@@ -1,8 +1,22 @@
 <footer class="site-footer">
     <div class="container">
         <p>&copy; {{ site.time | date: '%Y' }} {{ site.title }}</p>
-        {% if site.github_username %}
-            <a href="https://github.com/{{ site.github_username }}" target="_blank">GitHub</a>
-        {% endif %}
+        <div class="social-links">
+            {% if site.github_username %}
+                <a href="https://github.com/{{ site.github_username }}" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+            {% endif %}
+            {% if site.linkedin_username %}
+                <a href="https://linkedin.com/in/{{ site.linkedin_username }}" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            {% endif %}
+            {% if site.email %}
+                <a href="mailto:{{ site.email }}">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            {% endif %}
+        </div>
     </div>
 </footer>
