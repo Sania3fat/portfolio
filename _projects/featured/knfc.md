@@ -36,13 +36,10 @@ storytelling, and effective analysis.**
 
 <img src="https://github.com/user-attachments/assets/322789b3-ae8b-4273-96ef-d55f59fc97a3" alt="Comparitive analysis of Cost versus Selling Price across Departments" style="width:75%; height:auto;">
 
-![Comparitive analysis of Cost versus Selling Price across Departments](https://github.com/user-attachments/assets/322789b3-ae8b-4273-96ef-d55f59fc97a3)
+<img src="https://github.com/user-attachments/assets/829a59fc-b2f6-4b8e-a832-1a9eec3f67a8" alt="Inventory Optimization" style="width:75%; height:auto;">
 
+<img src="https://github.com/user-attachments/assets/58d6ded4-c9fb-4f24-94f1-a64eb0e6b4b3" alt="Inventory Optimization cont." style="width:75%; height:auto;">
 
-![Inventory Optimization](https://github.com/user-attachments/assets/829a59fc-b2f6-4b8e-a832-1a9eec3f67a8)
-
-
-![Inventory Optimization - Cont.](https://github.com/user-attachments/assets/58d6ded4-c9fb-4f24-94f1-a64eb0e6b4b3)
 
 
 ## Future Improvements
