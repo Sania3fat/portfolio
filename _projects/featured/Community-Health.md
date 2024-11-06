@@ -2,7 +2,7 @@
 title: "Community Asset Framework"
 description: "Conceived by Dr. David Dubois, the community asset framework provides a snapshot of county health along three dimensions: Nature, Society, and Economy."
 category: featured
-github_link: https://github.com/yourusername/project
+github_link: 
 technologies:
   - R
   - PowerBI
