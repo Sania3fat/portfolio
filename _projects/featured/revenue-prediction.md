@@ -4,7 +4,7 @@ description: "Developed and implemented predictive models to forecast university
 data and demographic analysis. Identified significant implications for university budgeting, tuition adjustments, and student
 recruitment strategies."
 category: featured
-github_link: https://github.com/yourusername/project
+github_link: 
 technologies:
   - R
   - PowerBI
