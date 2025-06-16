@@ -67,6 +67,13 @@ The chatbot is now in the testing phase
         </div>
       </div>
     </div>
+
+    <iframe 
+            src="https://chatbot-zx3azdx793iudqjuf2eds9.streamlit.app?embed=true"
+            class="chatbot-container"
+            frameborder="0"
+            allow="camera; microphone">
+        </iframe>
     
     <div style="background: #f8f9fa; padding: 20px; border-top: 1px solid #e9ecef;">
       <div style="display: flex; justify-content: space-around; flex-wrap: wrap; gap: 15px; align-items: center; font-size: 0.9rem; color: #6c757d;">
