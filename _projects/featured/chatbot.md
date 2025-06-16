@@ -28,12 +28,6 @@ The analysis currently uses Python, Streamlit, Word embedding (all-MiniLM-L6-v2)
 The chatbot is now in the testing phase
 ## Results
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Knowledge Assistant - Embedded Chatbot</title>
     <style>
         * {
             margin: 0;
@@ -269,8 +263,6 @@ The chatbot is now in the testing phase
             }
         });
     </script>
-</body>
-</html>
 
 ## Future Improvements
 
