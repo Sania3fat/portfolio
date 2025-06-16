@@ -2,7 +2,7 @@
 title: "Chatbot - Institutional Assessment"
 description: "A chatbot that provides factual information from Institutional Documents and Policies"
 category: featured
-github_link: [Chatbot](https://github.com/Sania3fat/ChatBot/blob/main/chatbot_optimized_0615v3.py)
+github_link: https://github.com/Sania3fat/ChatBot/blob/main/chatbot_optimized_0615v3.py
 technologies:
   - Python
   - Streamlit
