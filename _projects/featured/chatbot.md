@@ -29,63 +29,46 @@ The chatbot is now in the testing phase
 
 ## Results
 
-<div style="background: linear-gradient(135deg, #EC5E1A 0%, #EC5E1A 100%); padding: 40px 20px; border-radius: 10px; margin: 20px 0;">
-  <div style="background: white; border-radius: 20px; box-shadow: 0 8px 32px rgba(0,0,0,0.1); overflow: hidden; max-width: 800px; margin: 0 auto;">
-    
-    <div style="background: linear-gradient(135deg, #5B0F1B 0%, #5B0F1B 100%); color: white; padding: 30px; text-align: center;">
-      <h2 style="margin: 0; font-size: 2rem; font-weight: 600;">🤖 Institutional Assessment Assistant</h2>
-      <p style="margin: 10px 0 0 0; opacity: 0.9; font-size: 1.1rem;">Ask me about Maryville College policies and procedures</p>
-    </div>
-    
-    <div style="padding: 40px; background: #f8f9fa; text-align: center;">
-      <div style="background: white; padding: 30px; border-radius: 15px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.05);">
-        <h3 style="color: #5B0F1B; margin-bottom: 15px;">💬 Interactive Chat Interface</h3>
-        <p style="color: #6c757d; margin-bottom: 20px;">The chatbot provides real-time responses to questions about institutional documents and policies.</p>
-        <div style="background: #e9ecef; padding: 15px; border-radius: 10px; font-family: monospace; text-align: left;">
-          <strong>User:</strong> What are the graduation requirements?<br>
-          <strong style="color: #5B0F1B;">Assistant:</strong> Based on the institutional documents, graduation requirements include...
-        </div>
-      </div>
-      
-      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin-top: 30px;">
-        <div style="background: white; padding: 20px; border-radius: 10px; text-align: center; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
-          <div style="font-size: 2rem; margin-bottom: 10px;">📚</div>
-          <strong style="color: #5B0F1B;">Document Analysis</strong>
-          <p style="font-size: 0.9rem; color: #6c757d; margin-top: 8px;">Processes academic catalogs and policy documents</p>
-        </div>
-        
-        <div style="background: white; padding: 20px; border-radius: 10px; text-align: center; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
-          <div style="font-size: 2rem; margin-bottom: 10px;">🔍</div>
-          <strong style="color: #5B0F1B;">Smart Search</strong>
-          <p style="font-size: 0.9rem; color: #6c757d; margin-top: 8px;">Uses semantic embeddings for accurate retrieval</p>
-        </div>
-        
-        <div style="background: white; padding: 20px; border-radius: 10px; text-align: center; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
-          <div style="font-size: 2rem; margin-bottom: 10px;">⚡</div>
-          <strong style="color: #5B0F1B;">Real-time Response</strong>
-          <p style="font-size: 0.9rem; color: #6c757d; margin-top: 8px;">Powered by GPT-4o-mini for instant answers</p>
-        </div>
-      </div>
-    </div>
+### 🤖 Institutional Assessment Assistant
+*Ask me about Maryville College policies and procedures*
 
-    <iframe 
-            src="https://chatbot-zx3azdx793iudqjuf2eds9.streamlit.app?embed=true"
-            class="chatbot-container"
-            frameborder="0"
-            allow="camera; microphone">
-        </iframe>
-    
-    <div style="background: #f8f9fa; padding: 20px; border-top: 1px solid #e9ecef;">
-      <div style="display: flex; justify-content: space-around; flex-wrap: wrap; gap: 15px; align-items: center; font-size: 0.9rem; color: #6c757d;">
-        <div>✅ <strong>RAG Architecture</strong></div>
-        <div>✅ <strong>Semantic Search</strong></div>
-        <div>✅ <strong>Policy Compliance</strong></div>
-        <div>✅ <strong>Multi-format Support</strong></div>
-      </div>
-    </div>
-    
-  </div>
-</div>
+---
+
+#### 💬 Interactive Chat Interface
+The chatbot provides real-time responses to questions about institutional documents and policies using advanced RAG (Retrieval-Augmented Generation) technology.
+
+**Sample Conversation:**
+```
+User: What are the graduation requirements?
+Assistant: Based on the institutional documents, graduation requirements include...
+```
+
+#### Key Features
+
+| Feature | Technology | Description |
+|---------|------------|-------------|
+| 📚 **Document Analysis** | Python + PDF/Web Scraping | Processes academic catalogs and policy documents |
+| 🔍 **Smart Search** | all-MiniLM-L6-v2 embeddings | Uses semantic embeddings for accurate retrieval |
+| ⚡ **Real-time Response** | GPT-4o-mini | Powered by advanced language model for instant answers |
+| 🔒 **Secure & Reliable** | Streamlit framework | Ensures data privacy and consistent performance |
+
+#### Live Demo
+
+<iframe 
+        src="https://chatbot-zx3azdx793iudqjuf2eds9.streamlit.app?embed=true"
+        width="100%" 
+        height="600" 
+        frameborder="0"
+        allow="camera; microphone">
+</iframe>
+
+#### Core Capabilities
+✅ **RAG Architecture** - Combines retrieval and generation for accurate responses  
+✅ **Semantic Search** - Understanding context and meaning, not just keywords  
+✅ **Policy Compliance** - Trained specifically on institutional documents  
+✅ **Multi-format Support** - Handles PDFs, web pages, and structured documents  
+
+---
 
 ### Technical Architecture
 
