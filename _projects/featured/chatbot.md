@@ -54,7 +54,7 @@ Assistant: Based on the institutional documents, graduation requirements include
 
 #### Live Demo
 
-**🚀 [Try the Chatbot Live](https://chatbot-zx3azdx793iudqjuf2eds9.streamlit.app){:target="_blank"}**
+**🚀 [Try the Chatbot Live](https://chatbot-zx3azdx793iudqjuf2eds9.streamlit.app)**
 
 [![Chatbot Demo](https://img.shields.io/badge/🤖_Live_Demo-Try_Now-brightgreen?style=for-the-badge&logo=streamlit)](https://chatbot-zx3azdx793iudqjuf2eds9.streamlit.app)
 
