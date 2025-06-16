@@ -27,14 +27,18 @@ The analysis currently uses Python, Streamlit, Word embedding (all-MiniLM-L6-v2)
 ## Implementation
 The chatbot is now in the testing phase
 ## Results
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot Interface</title>
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background: linear-gradient(135deg, #EC5E1A 0%, #EC5E1A 100%);
@@ -44,7 +48,6 @@ The chatbot is now in the testing phase
             align-items: center;
             padding: 20px;
         }
-
         .chatbot-wrapper {
             background: white;
             border-radius: 20px;
@@ -56,33 +59,34 @@ The chatbot is now in the testing phase
             display: flex;
             flex-direction: column;
         }
-
         .chatbot-header {
             background: linear-gradient(135deg, #5B0F1B 0%, #5B0F1B 100%);
             color: white;
             padding: 20px 30px;
             text-align: center;
+            position: relative;
         }
-
         .chatbot-header h1 {
             margin: 0;
             font-size: 1.8rem;
             font-weight: 600;
         }
-
         .chatbot-header p {
             margin: 5px 0 0 0;
             opacity: 0.9;
             font-size: 0.95rem;
         }
-
         .chatbot-container {
             flex: 1;
             border: none;
             width: 100%;
             background: #f8f9fa;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.1rem;
+            color: #6c757d;
         }
-
         .features {
             background: #f8f9fa;
             padding: 15px 30px;
@@ -92,21 +96,19 @@ The chatbot is now in the testing phase
             flex-wrap: wrap;
             gap: 10px;
         }
-
         .feature {
             display: flex;
             align-items: center;
             color: #6c757d;
             font-size: 0.85rem;
         }
-
         .feature::before {
             content: "✓";
             color: #28a745;
             font-weight: bold;
             margin-right: 8px;
         }
-
+        
         /* Floating chat button version */
         .chat-button {
             position: fixed;
@@ -123,13 +125,12 @@ The chatbot is now in the testing phase
             box-shadow: 0 8px 25px rgba(0,0,0,0.15);
             transition: all 0.3s ease;
             z-index: 1000;
+            display: none; /* Hidden by default, can be toggled with JavaScript */
         }
-
         .chat-button:hover {
             transform: translateY(-2px);
             box-shadow: 0 12px 35px rgba(0,0,0,0.2);
         }
-
         .chat-modal {
             position: fixed;
             top: 0;
@@ -143,11 +144,9 @@ The chatbot is now in the testing phase
             align-items: center;
             padding: 20px;
         }
-
         .chat-modal.active {
             display: flex;
         }
-
         .chat-modal-content {
             background: white;
             border-radius: 15px;
@@ -157,8 +156,8 @@ The chatbot is now in the testing phase
             display: flex;
             flex-direction: column;
             overflow: hidden;
+            position: relative;
         }
-
         .close-btn {
             position: absolute;
             top: 15px;
@@ -170,7 +169,7 @@ The chatbot is now in the testing phase
             cursor: pointer;
             z-index: 1002;
         }
-
+        
         @media (max-width: 768px) {
             .chatbot-wrapper {
                 height: 100vh;
@@ -182,87 +181,87 @@ The chatbot is now in the testing phase
                 flex-direction: column;
                 align-items: center;
             }
+            
+            .chat-button {
+                bottom: 20px;
+                right: 20px;
+                width: 50px;
+                height: 50px;
+                font-size: 20px;
+            }
         }
     </style>
 </head>
 <body>
-    <!-- Full Page Version -->
+    <!-- Main chatbot interface -->
     <div class="chatbot-wrapper">
         <div class="chatbot-header">
-            <h1>🎓 Knowledge Assistant</h1>
-            <p>Ask questions about our institutional documents and policies</p>
-            <button class="close-btn" onclick="closeChat()" style="display: none;">&times;</button>
+            <h1>AI Assistant</h1>
+            <p>How can I help you today?</p>
         </div>
         
-        <!-- Replace YOUR_STREAMLIT_APP_URL with your actual Streamlit app URL -->
-        <iframe 
-            src="https://chatbot-zx3azdx793iudqjuf2eds9.streamlit.app?embed=true"
-            class="chatbot-container"
-            frameborder="0"
-            allow="camera; microphone">
-        </iframe>
+        <div class="chatbot-container">
+            <!-- This is where you would embed your actual chatbot -->
+            <p>Chatbot interface will be loaded here</p>
+        </div>
         
         <div class="features">
-            <div class="feature">AI-Powered Responses</div>
-            <div class="feature">Document Search</div>
-            <div class="feature">Instant Answers</div>
-            <div class="feature">Source Citations</div>
+            <div class="feature">24/7 Support</div>
+            <div class="feature">Instant Responses</div>
+            <div class="feature">Multi-language</div>
+            <div class="feature">Secure & Private</div>
         </div>
     </div>
 
-    <!-- Floating Chat Button Version (uncomment to use) -->
-    <!--
-    <button class="chat-button" onclick="openChat()">💬</button>
+    <!-- Optional floating chat button (hidden by default) -->
+    <button class="chat-button" onclick="toggleChat()">💬</button>
     
+    <!-- Optional modal version -->
     <div class="chat-modal" id="chatModal">
         <div class="chat-modal-content">
             <div class="chatbot-header">
-                <h1>🎓 Knowledge Assistant</h1>
-                <p>Ask questions about our institutional documents and policies</p>
-                <button class="close-btn" onclick="closeChat()">&times;</button>
+                <button class="close-btn" onclick="toggleChat()">&times;</button>
+                <h1>AI Assistant</h1>
+                <p>How can I help you today?</p>
             </div>
-            
-            <iframe 
-                src="https://your-streamlit-app-url.streamlit.app/?embed=true"
-                class="chatbot-container"
-                frameborder="0"
-                allow="camera; microphone">
-            </iframe>
-            
+            <div class="chatbot-container">
+                <p>Modal chatbot interface will be loaded here</p>
+            </div>
             <div class="features">
-                <div class="feature">AI-Powered Responses</div>
-                <div class="feature">Document Search</div>
-                <div class="feature">Instant Answers</div>
-                <div class="feature">Source Citations</div>
+                <div class="feature">24/7 Support</div>
+                <div class="feature">Instant Responses</div>
+                <div class="feature">Multi-language</div>
+                <div class="feature">Secure & Private</div>
             </div>
         </div>
     </div>
-    -->
 
     <script>
-        function openChat() {
-            document.getElementById('chatModal').classList.add('active');
-        }
-
-        function closeChat() {
-            document.getElementById('chatModal').classList.remove('active');
-        }
-
-        // Close modal when clicking outside
-        document.addEventListener('click', function(event) {
+        function toggleChat() {
             const modal = document.getElementById('chatModal');
-            if (event.target === modal) {
-                closeChat();
+            const button = document.querySelector('.chat-button');
+            
+            if (modal.classList.contains('active')) {
+                modal.classList.remove('active');
+                button.style.display = 'block';
+            } else {
+                modal.classList.add('active');
+                button.style.display = 'none';
             }
-        });
-
-        // Escape key to close modal
-        document.addEventListener('keydown', function(event) {
-            if (event.key === 'Escape') {
-                closeChat();
+        }
+        
+        // Show floating button on scroll (optional)
+        window.addEventListener('scroll', function() {
+            const button = document.querySelector('.chat-button');
+            if (window.scrollY > 300) {
+                button.style.display = 'block';
+            } else {
+                button.style.display = 'none';
             }
         });
     </script>
+</body>
+</html>
 
 ## Future Improvements
 
