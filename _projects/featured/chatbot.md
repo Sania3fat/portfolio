@@ -54,13 +54,11 @@ Assistant: Based on the institutional documents, graduation requirements include
 
 #### Live Demo
 
-<iframe 
-        src="https://chatbot-zx3azdx793iudqjuf2eds9.streamlit.app?embed=true"
-        width="100%" 
-        height="600" 
-        frameborder="0"
-        allow="camera; microphone">
-</iframe>
+**🚀 [Try the Chatbot Live](https://chatbot-zx3azdx793iudqjuf2eds9.streamlit.app){:target="_blank"}**
+
+[![Chatbot Demo](https://img.shields.io/badge/🤖_Live_Demo-Try_Now-brightgreen?style=for-the-badge&logo=streamlit)](https://chatbot-zx3azdx793iudqjuf2eds9.streamlit.app)
+
+> **Note:** Click the link above to interact with the live chatbot interface. The application opens in a new tab where you can ask questions about Maryville College policies and procedures.
 
 #### Core Capabilities
 ✅ **RAG Architecture** - Combines retrieval and generation for accurate responses  
